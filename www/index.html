@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+@font-face {
+
+font-family: 'Bamini Tamil';
+'
+src: url('www.kvijayanand.zzl.org/fonts/bamini.ttf');
+
+}
+.p{
+font-family: Bamini Tamil, Helvetica, sans-serif;
+}
+.span{
+font-family: Bamini Tamil, Helvetica, sans-serif;
+}
+
+#pageone.ui-page{
+  background-image: url("images/full.png") !important ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size:100% 100%;
+}
+.ui-body-c {
+    background-image: url("images/full.png") !important ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size:100% 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<div data-role="page" id="pageone" data-theme="c">
+
+
+<script src="js/ind.js"></script>
+
+
+<!--header start-->
+<div data-role="header" data-position="fixed" class="bg">
+<!-- <a href="#myPanel" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Home
+</a>-->
+<a href="#overlayPanel" class="nav"><img src="images/menu.png" alt="Smiley face"></a>
+<h1>Welcome</h1>
+<!--<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+<a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a>
+</div>
+<!--header end-->
+<div data-role="panel" id="overlayPanel" data-display="push" data-position="left" data-dismissible="false" data-swipe-close="false"> 
+      <ul data-role="listview" data-inset="true">
+      <li id="mavattam"><a href="profile.html" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">மாவட்டம்</span></a></li>
+      <li id="anikalbut"><a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right"   ><span class="ww">அணிகள்</span></a></li>
+      <li id="program"><a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right" ><span class="ww"> நிகழ்வுகள்</span></a></li>
+        </ul>
+  <!--   <a href="#" id="two_signout" class="ui-btn sio ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a> -->
+</div>
+
+
+<div role="main" class="ui-content">
+<div class="ui-grid-solo spacea">
+<div class="ui-block-a">    
+</div>
+</div>
+
+<div class="ui-grid-solo">
+<div class="ui-block-a">      
+<div  style="text-align:center;"><a href="#" class="ui-btn maintxt" data-transition="slide" data-direction="reverse" id="paget">மாவட்டம்</a></div>
+</div>    
+</div>
+
+<div class="ui-grid-solo spacea">
+<div class="ui-block-a">    
+</div>
+</div>
+
+<div class="ui-grid-solo">
+<div class="ui-block-a ">
+<div style="text-align: center;" id="anikalbut"><a href="#" class="ui-btn maintxt " data-transition="slide" data-direction="reverse"> அணிகள்</a></div>
+</div>
+</div>
+
+<div class="ui-grid-solo spacea">
+<div class="ui-block-a">    
+</div>
+</div>
+
+<div class="ui-grid-solo">
+      <div class="ui-block-a">
+<div  style="text-align: center;" id="programbutpage"><a href="#" class="ui-btn maintxt" data-transition="slide" data-direction="reverse">நிகழ்வுகள்</a></div>
+ </div>
+</div>
+
+</div> 
+     <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="bg">
+       <h1>Footer Text</h1>
+    </div> 
+</div>  
+<!--page one end-->
+
+<!--screen -two-->	
+<div data-role="page" id="pagetwo">
+ <script src="js/select.js"></script> 
+<div data-role="panel" id="myPanel"> 
+<h2>Panel Header</h2>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+</div> 
+
+
+<div data-role="header" data-position="fixed" class="bg">
+<!--<a href="#pageone" data-transition="slide" data-direction="reverse" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>-->
+
+<a href="#pageone" data-transition="slide" data-direction="reverse" class="nav"><img src="images/back.png" alt="Smiley face"></a>
+
+<h1>DMK</h1>
+<!-- <a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a> -->
+<!-- <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+</div>
+
+<div data-role="main" class="ui-content">
+<!-- <div>test<span id="emplyee_name_two"></span></div>
+<div>test2<span id="emplyee_id_two"></span></div> -->
+
+<!-- <p id="emplyee_id_two">id tamil</p>
+<p id="emplyee_name_two">name</p> -->
+
+<form method="post" action="" id="check-district">
+<fieldset class="ui-field-contain">
+<select name="day" id="district_val">
+ 		  <option value="ariyalur">அரியலூர்</option>
+          <option value="chennai">சென்னை</option>
+          <option value="coimbatore">கோயம்புத்தூர்</option>
+          <option value="kadalur">கூடலூர்</option>
+          <option value="dharmapuri">தர்மபுரி</option>
+          <option value="dindigul">திண்டுக்கல்</option>
+          <option value="erode">ஈரோடு</option>
+          <option value="kanchipuram">காஞ்சிபுரம்</option>
+          <option value="kanyakumari">கன்னியாகுமரி</option>
+          <option value="karur">கரூர்</option>
+          <option value="krishnagiri">கிருஷ்ணகிரி</option>
+          <option value="madhurai">மதுரை</option>
+          <option value="nagapattinam">நாகப்பட்டினம்</option>
+          <option value="namakkal">நாமக்கல்</option>
+          <option value="nilgiri">நீலகிரி</option>
+          <option value="perambalur">பெரம்பலூர்</option>
+          <option value="pudukkottai">புதுக்கோட்டை</option>
+          <option value="rameshwaram">ராமநாதபுரம்</option>
+          <option value="salem">சேலம்</option>
+          <option value="sivaganga">சிவகங்கை</option>
+          <option value="thanjavur">தஞ்சாவூர்</option>
+          <option value="thane">தேனி</option>
+          <option value="thoothukudi">தூத்துக்குடி</option>
+          <option value="tiruchirappalli">திருச்சிராப்பள்ளி</option>
+          <option value="tirunelveli">திருநெல்வேலி</option>
+          <option value="tirupur">திருப்பூர்</option>
+          <option value="trichy">திருச்சி</option>
+          <option value="thiruvallur">திருவள்ளூர்</option>
+          <option value="tiruvannamalai">திருவண்ணாமலை</option>
+          <option value="thiruvarur">திருவாரூர்</option>
+          <option value="vellore">வேலூர்</option>
+          <option value="villupuram">விழுப்புரம்</option>
+          <option value="virudhunagar">விருதுநகர்</option>
+</select>
+</fieldset>
+<!--<div style="text-align:center;"><input type="submit" data-inline="true" value="Submit" ></div>-->
+<a href="" class="ui-btn" data-transition="slide" id="select">SUMBIT</a>
+
+</form>
+
+<!--<a href="#pageone" data-transition="slide" data-direction="reverse">Back</a>-->
+
+</div>
+
+<div data-role="footer" data-position="fixed" class="bg">
+<h1>Footer Text</h1>	
+</div>
+
+</div>
+
+<div data-role="page" id="anikalpage">
+ <script src="js/anikal.js"></script> 
+<div data-role="panel" id="myPanel"> 
+<h2>Panel Header</h2>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+</div> 
+
+
+<div data-role="header" data-position="fixed" class="bg">
+<!--<a href="#pageone" data-transition="slide" data-direction="reverse" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>-->
+
+<a href="#pageone" data-transition="slide" data-direction="reverse" class="nav"><img src="images/back.png" alt="Smiley face"></a>
+
+<h1>DMK</h1>
+<!-- <a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a> -->
+<!-- <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+</div>
+
+<div data-role="main" class="ui-content ">
+<!-- 
+<ul data-role="listview" data-inset="true">
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon listbtncol">ஆதி திராவிடர் நலக்குழு</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">  விவசாயத் தொழிலாளர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">கலை, இலக்கியப் பகுத்தறிவுப் பேரவை அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">வர்த்தகர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon"> மருத்துவர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">பொறியாளர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">  விவசாயத் தொழிலாளர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">விவசாய அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">மீனவர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">தொழிலாளர் அணி</a></li>
+
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon"> வழக்கறிஞர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">இலக்கிய அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">சிறுபான்மையினர் நல உரிமைப்பிரிவு அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon"> மாணவர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">தொண்டர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">நெசவாளர் அணி</a></li>
+
+       <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">மகளிர் தொண்டர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">மகளிர் அணி</a></li>
+      <li><a href="#"><img src="images/anikal.png" alt="anikal" class="ui-li-icon">இளைஞர் அணி</a></li>
+    </ul> -->
+<label class="cenla"><b>அணிகள்</b></label>
+   <form method="post" action="" id="anikal-form">
+<fieldset class="ui-field-contain">
+<select name="day" id="anikal_val">
+<option value="">அணிகள்</option>
+ 		  <option value="athi">ஆதி திராவிடர் நலக்குழு</option>
+          <option value="vivasayam">விவசாயத் தொழிலாளர் அணி</option>
+          <option value="kalai">கலை, இலக்கியப் பகுத்தறிவுப் பேரவை அணி</option>
+          <option value="varthagam">வர்த்தகர் அணி</option>
+          <option value="maruthuvar">மருத்துவர் அணி</option>
+          <option value="poriyaalan">பொறியாளர் அணி</option>
+          <option value="viva">விவசாய அணி</option>
+          <option value="fish">மீனவர் அணி</option>
+         <!--  <option value="kanchipuram">தொழிலாளர் அணி</option> -->
+          <option value="kachi">வழக்கறிஞர் அணி</option>
+          <option value="elakia">இலக்கிய அணி</option>
+          <!-- <option value="madhurai">சிறுபான்மையினர் நல உரிமைப்பிரிவு அணி</option> -->
+          <option value="student">மாணவர் அணி</option>
+          <option value="">தொண்டர் அணி</option>
+          <option value="ladies">மகளிர் தொண்டர் அணி</option>
+          <option value="ladiesani">மகளிர் அணி</option>
+          <option value="youth">இளைஞர் அணி</option>
+</select>
+</fieldset>
+<!--<div style="text-align:center;"><input type="submit" data-inline="true" value="Submit" ></div>-->
+<a href="" class="ui-btn" data-transition="slide" id="anikalsubmit">SUMBIT</a>
+
+</form>
+
+<label class="cenla"><b>குழுக்கள்</b></label>
+<form method="post" action="" id="group-form">
+<fieldset class="ui-field-contain">
+<select name="day" id="group_val">
+<option value="">குழுக்கள்</option>
+ 		<option value="money">சொத்துப் பாதுகாப்புக்குழு</option>
+          <option value="group">தணிக்கைக்குழு</option>
+          <option value="case"> சட்டதிட்டத் திருத்தக்குழு</option>
+          <option value="goal">கொள்கை பரப்புச் செயலாளர்கள் குழு</option>
+          <option value="head">  தலைமை கழகச் செய்தி தொடர்பு செயலாளர்கள்</option>
+          <option value="out">கழக வெளியீட்டுக் குழு</option>
+          <option value="thir">  தீர்மானக்குழு</option>
+          <option value="lad">மகளிர் அணி பிரச்சாரக்குழு</option>
+          <option value="heaad">தலைமைக் கழகத் தேர்தல் பணிக்குழு</option>
+          <option value="la">தலைமை நிலைய அலுவலச் செயலாளர்கள்</option>
+          
+</select>
+</fieldset>
+
+<a href="" class="ui-btn" data-transition="slide" id="groupsubmit">SUMBIT</a>
+
+</form>
+
+
+</div>
+
+<div data-role="footer" data-position="fixed" class="bg">
+<h1>Footer Text</h1>	
+</div>
+
+</div>
+
+
+<!--3-->
+
+<div data-role="page" id="pagethree">
+ <script src="js/district.js"></script> 
+
+<div data-role="header"  data-position="fixed" class="bg">
+<!-- <a href="#myPanel" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Home
+</a>-->
+
+<a href="#" data-transition="slide" data-direction="reverse" class="nav" id="bacses"><img src="images/back.png" alt="Smiley face"></a>
+<h1>Welcome</h1>
+<!--<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+<a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a>
+</div>
+
+<div data-role="panel" id="myPanel"> 
+<h2>Panel Header</h2>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+<!-- <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
+</div> 
+
+<div data-role="main" class="ui-content full-ui listbg ">
+<!-- <p>Notice that we have added the CSS class of "ui-corner-all" and "ui-shadow" to the header buttons, to make them look a bit more desirable.</p>-->
+
+<div data-role="controlgroup" data-type="vertical">
+<form method="post" action="" id="check-district" style="margin-top: -21px !important;">
+<!-- <fieldset class="ui-field-contain">
+<select name="day" id="district_val">
+         
+</select>
+</fieldset> -->
+<!--<div style="text-align:center;"><input type="submit" data-inline="true" value="Submit" ></div>-->
+<!--<a href="#pagethree" class="ui-btn" data-transition="slide">SUMBIT</a>-->
+</form>
+</div>
+<!--list-1-->
+<div id="pag">
+<!-- <ul data-role="listview" data-inset="true" class="list">
+<li>
+<a href="#"class="ui-li-icon ui-btn ui-btn-icon- ui-icon-carat- listview manpad border">
+<img src="images/sekar.png">
+<h2 class="head" id="name">த</h2>
+<p class="head" id="desc">.</p>
+</a>
+</li>
+</ul> -->
+</div>
+<!--list-1-->
+
+<!--list-2-->
+
+<!--list-2-->
+
+<!--list-3-->
+
+<!--list-3-->
+
+<!--list-4-->
+
+<!--list-3-->
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar" class="ui-navbar" role="navigation">
+<ul class="ui-grid-b">
+ <li class="ui-block-a ui-nodisc-icon" id="mavattam"><a href="#" data-icon="" data-transition="flow" class="ui-link ui-btn ui-icon- ui-btn-icon-top ui-btn-active foot"><img src="images/nagaram.png" style="padding-top: 7px;"><br><span style="font-size: 9px">மாவட்டம்</span></a></li> 
+
+ <li class="ui-block-b ui-nodisc-icon" id="nagaram"><a href="#" data-icon="" data-transition="flow" class="ui-link ui-btn ui-icon- ui-btn-icon-top foot"><img src="images/navigation-icon.png" style="padding-top: 7px;"><br><span style="font-size: 9px">நகரம்</span></a></li> 
+
+<li class="ui-block-c ui-nodisc-icon" id="one"><a href="#" data-icon="" data-transition="flow
+" class="ui-link ui-btn ui-btn-icon-top foot"><img src="images/people.png" style="padding-top: 7px;"><br><span style="font-size: 9px">ஒன்றியம்</span></a></li>
+
+<li class="ui-block-c ui-nodisc-icon" id="paguthi"><a href="#" data-icon="" data-transition="flow
+" class="ui-link ui-btn  ui-btn-icon-top foot"><img src="images/home-icon.png" style="padding-top: 7px;"><br><span style="font-size: 9px">பகுதி</span></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div data-role="page" id="anikallist">
+ <script src="js/anikallist.js"></script> 
+
+<div data-role="header"  data-position="fixed" class="bg">
+<!-- <a href="#myPanel" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Home
+</a>-->
+
+<a href="#" data-transition="slide" data-direction="reverse" class="nav" id="anikalpageback"><img src="images/back.png" alt="Smiley face"></a>
+<h1>Welcome</h1>
+<!--<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+<a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a>
+</div>
+
+<div data-role="panel" id="myPanel"> 
+<h2>Panel Header</h2>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+<!-- <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
+</div> 
+
+<div data-role="main" class="ui-content full-ui listbg ">
+<!-- <p>Notice that we have added the CSS class of "ui-corner-all" and "ui-shadow" to the header buttons, to make them look a bit more desirable.</p>-->
+
+<div data-role="controlgroup" data-type="vertical">
+<form method="post" action="" id="check-district" style="margin-top: -21px !important;">
+<!-- <fieldset class="ui-field-contain">
+<select name="day" id="district_val">
+         
+</select>
+</fieldset> -->
+<!--<div style="text-align:center;"><input type="submit" data-inline="true" value="Submit" ></div>-->
+<!--<a href="#pagethree" class="ui-btn" data-transition="slide">SUMBIT</a>-->
+</form>
+</div>
+<!--list-1-->
+<div id="anikalli">
+<!-- <ul data-role="listview" data-inset="true" class="list">
+<li>
+<a href="#"class="ui-li-icon ui-btn ui-btn-icon- ui-icon-carat- listview manpad border">
+<img src="images/sekar.png">
+<h2 class="head" id="name">த</h2>
+<p class="head" id="desc">.</p>
+</a>
+</li>
+</ul> -->
+</div>
+<!--list-1-->
+
+<!--list-2-->
+
+<!--list-2-->
+
+<!--list-3-->
+
+<!--list-3-->
+
+<!--list-4-->
+
+<!--list-3-->
+
+</div>
+
+<!-- <div data-role="footer" data-position="fixed">
+<div data-role="navbar" class="ui-navbar" role="navigation">
+<ul class="ui-grid-b">
+ <li class="ui-block-a ui-nodisc-icon" id="mavattam"><a href="#" data-icon="" data-transition="flow" class="ui-link ui-btn ui-icon- ui-btn-icon-top ui-btn-active foot"><img src="images/nagaram.png" style="padding-top: 7px;"><br><span style="font-size: 9px">மாவட்டம்</span></a></li> 
+
+ <li class="ui-block-b ui-nodisc-icon" id="nagaram"><a href="#" data-icon="" data-transition="flow" class="ui-link ui-btn ui-icon- ui-btn-icon-top foot"><img src="images/navigation-icon.png" style="padding-top: 7px;"><br><span style="font-size: 9px">நகரம்</span></a></li> 
+
+<li class="ui-block-c ui-nodisc-icon" id="one"><a href="#" data-icon="" data-transition="flow
+" class="ui-link ui-btn ui-btn-icon-top foot"><img src="images/people.png" style="padding-top: 7px;"><br><span style="font-size: 9px">ஒன்றியம்</span></a></li>
+
+<li class="ui-block-c ui-nodisc-icon" id="paguthi"><a href="#" data-icon="" data-transition="flow
+" class="ui-link ui-btn  ui-btn-icon-top foot"><img src="images/home-icon.png" style="padding-top: 7px;"><br><span style="font-size: 9px">பகுதி</span></a></li>
+</ul>
+</div>
+</div> -->
+
+</div>
+
+<!--screen 4 -->
+
+<div data-role="page" id="pagefour">
+ <script src="js/person.js"></script> 
+<div data-role="panel" id="myPanel"> 
+<h2>Panel Header</h2>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+</div> 
+
+
+<div data-role="header"  data-position="fixed" class="bg">
+<!-- <a href="#myPanel" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Home
+</a>-->
+<a href="#" data-transition="slide" data-direction="reverse" class="nav" id="backtwo"><img src="images/back.png" alt="Smiley face"></a>
+<h1>Welcome</h1>
+<!--<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+<a href="#" class="nav" ></a>
+</div>
+
+
+
+
+<div data-role="main" class="ui-content padfullbutton">
+<button class="ui-btn"style="  margin-top: 0px; color:#e80000;font-size: 13px;" id="headingt">சென்னை கிழக்கு மாவட்டம்</button>
+
+
+
+<div style="margin-left: 20px; margin-right: 20px;">
+<div style="float=left;" >
+<span id="img" ></span>
+<span class="profilehead" id="namep">திரு. பி.கே.சேகர்பாபு</span>
+<br>
+<span class="profile" id="designation">செயலாளர்,</span></div>
+
+<div style="float:right ;margin-top: 47px;;">
+<a href="#myPopup" data-rel="popup" data-transition="slide" aria-haspopup="true" aria-owns="myPopup" aria-expanded="false" class="ui-link"><img src="images/call-icon.png"><a href="#myPopup2" data-rel="popup" data-transition="turn" aria-haspopup="true" aria-owns="myPopup2" aria-expanded="false" class="ui-link"><img src="images/commend-icon.png"></a></a>
+</div> 
+
+
+<!--popup-->
+
+ <div class="ui-content">
+<a href="#myPopup" data-rel="popup" ></a>
+
+<div data-role="popup" id="myPopup">
+<p id="mobno">9600836</p>
+</div>
+</div>
+
+
+<div class="ui-content">
+<a href="#myPopup2" data-rel="popup" ></a>
+
+<div data-role="popup" id="myPopup2">
+<p>hi</p>
+</div>
+</div>  
+
+<!--pop-->
+
+
+<div class="fnt" id="name"> சென்னை கிழக்கு மாவட்ட தி.மு.க.
+<br>
+எண். 7, செல்லப்பா தெரு,
+ஓட்டேரி, சென்னை - 600 012.
+செல்: 98410-40026 </div>
+<br>
+<br>
+<div  class="fnt" id="desc">
+</div> 
+</div>
+
+
+</div>
+
+
+
+	<!-- 
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar" class="ui-navbar" role="navigation">
+	<ul class="ui-grid-b">
+	<li class="ui-block-a ui-nodisc-icon"><a href="#" data-icon="" data-transition="flow" class="ui-link ui-btn ui-icon- ui-btn-icon-top ui-btn-active foot"><img src="images/nagaram.png" style="padding-top: 7px;"><br><span style="font-size: 9px">மாவட்டம்</span></a></li>
+
+	<li class="ui-block-b ui-nodisc-icon"><a href="#" data-icon="" data-transition="flow" class="ui-link ui-btn ui-icon- ui-btn-icon-top foot"><img src="images/navigation-icon.png" style="padding-top: 7px;"><br><span style="font-size: 9px">நகரம்</span></a></li>
+
+	<li class="ui-block-c ui-nodisc-icon"><a href="#" data-icon="" data-transition="flow
+	" class="ui-link ui-btn ui-btn-icon-top foot"><img src="images/people.png" style="padding-top: 7px;"><br><span style="font-size: 9px">ஒன்றியம்</span></a></li>
+
+	<li class="ui-block-c ui-nodisc-icon"><a href="#" data-icon="" data-transition="flow
+	" class="ui-link ui-btn  ui-btn-icon-top foot"><img src="images/home-icon.png" style="padding-top: 7px;"><br><span style="font-size: 9px">பகுதி</span></a></li>
+	</ul>
+	</div>
+
+	</div> -->
+
+</div> 
+
+
+
+
+
+
+
+
+<div data-role="page" id="anikallistperson">
+ <script src="js/anikallistperson.js"></script> 
+
+
+
+<div data-role="header"  data-position="fixed" class="bg">
+<!-- <a href="#myPanel" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Home
+</a>-->
+<a href="#" data-transition="slide" data-direction="reverse" class="nav" id="anikalback"><img src="images/back.png" alt="Smiley face"></a>
+<h1>Welcome</h1>
+<!--<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+<a href="#" class="nav" ></a>
+</div>
+
+
+
+
+<div data-role="main" class="ui-content padfullbutton">
+<button class="ui-btn"style="  margin-top: 0px; color:#e80000;font-size: 13px;" id="headingtanikal">சென்னை கிழக்கு மாவட்டம்</button>
+
+
+
+<div style="margin-left: 20px; margin-right: 20px;">
+<div style="float=left;" >
+<span id="imganikal"></span>
+<span class="profilehead" id="namepanikal">திரு. பி.கே.சேகர்பாபு</span>
+<br>
+<span class="profile" id="designationanikal">செயலாளர்,</span></div>
+
+<div style="float:right ;margin-top: 47px;;">
+<a href="#myPopupa" data-rel="popup" data-transition="slide" aria-haspopup="true" aria-owns="myPopup" aria-expanded="false" class="ui-link"><img src="images/call-icon.png"><a href="#myPopup3" data-rel="popup" data-transition="turn" aria-haspopup="true" aria-owns="myPopup2" aria-expanded="false" class="ui-link"><img src="images/commend-icon.png"></a></a>
+</div> 
+
+
+<!--popup-->
+
+ <div class="ui-content">
+<a href="#myPopupa" data-rel="popup" ></a>
+
+<div data-role="popup" id="myPopupa">
+<p id="mobnoanikal">9600836306</p>
+</div>
+</div>
+
+
+<div class="ui-content">
+<a href="#myPopup3" data-rel="popup" ></a>
+
+<div data-role="popup" id="myPopup3">
+<p>hi</p>
+</div>
+</div>  
+
+<!--pop-->
+
+
+<div class="fnt" id="nameanikal"> சென்னை கிழக்கு மாவட்ட தி.மு.க.
+<br>
+எண். 7, செல்லப்பா தெரு,
+ஓட்டேரி, சென்னை - 600 012.
+செல்: 98410-40026 </div>
+<br>
+<br>
+<div  class="fnt" id="descanikal">
+</div> 
+</div>
+
+
+</div>
+</div>
+
+
+
+<div data-role="page" id="programpage">
+<script type="text/javascript" src="js/program.js"></script>
+<!-- <div data-role="header"  data-position="fixed" class="bg">
+
+
+   <a href="#pagethree" data-transition="slide" data-direction="reverse" class="nav"><img src="images/back.png" alt="Smiley face"></a>
+
+<h1> நிகழ்வுகள்</h1>
+
+
+   <a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a>
+  </div> -->
+
+<div data-role="header" data-position="fixed" class="bg">
+<!--<a href="#pageone" data-transition="slide" data-direction="reverse" class="ui-btn  ui-btn-inline ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left">Back</a>-->
+
+<a href="#pageone" data-transition="slide" data-direction="reverse" class="nav"><img src="images/back.png" alt="Smiley face"></a>
+
+<h1>நிகழ்வுகள்</h1>
+<!-- <a href="#" class="nav"><img src="images/search.png" alt="Smiley face"></a> -->
+<!-- <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+</div>
+
+
+  <div data-role="main" class="ui-content">
+    <img src="images/1.png" style="width:100%;">
+    <h1 style="font-size: 20px;">கடலூர் மாபொரும் பொதுகூட்டம்</h1>
+   <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-nodisc-icon list">    
+      <li class="ui-first-child"><a href="#" class="ui-btn ui-btn-icon-right ui-nodisc-icon"><img src="images/home.png"style="padding-top:10px;">இடம்:<span id="placee"></span></a></li>
+      <li data-icon="plus"><a href="#" class="ui-btn ui-btn-icon-right ui-nodisc-icon"><img src="images/date.png" style="padding-top:10px;">தேதி:<span id="date"></span></a></li>
+      <li data-icon="minus"><a href="#" class="ui-btn ui-btn-icon-right ui-nodisc-icon"><img src="images/time.png" style="padding-top:10px;">நேரம்:<span id="time"></span></a></li>
+     
+        </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--popup--><!--
+<div data-role="page" id="pagefour">
+
+
+
+<div class="ui-content">
+<a href="#myPopup" data-rel="popup" ></a>
+
+<div data-role="popup" id="myPopup">
+<p>7299692111</p>
+</div>
+</div>
+
+
+<div class="ui-content">
+<a href="#myPopup" data-rel="popup" ></a>
+
+<div data-role="popup" id="myPopup">
+<p>hi</p>
+</div>
+</div>
+
+</div>  -->
+
+<!--popup-->
+	
+</body>
+</html>

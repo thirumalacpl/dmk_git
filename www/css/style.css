@@ -1,0 +1,289 @@
+
+
+.bg{
+  
+     /*background-color: red !important;*/
+    background-image: url("../images/top-bg.png") !important;
+    color: white !important;
+    border-width: 1px 0 !important;
+    border-color: transparent!important;
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.nav{
+
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+  color: #333 !important;
+  text-shadow: 0 1px 0 #f3f3f3 !important;
+}
+
+
+
+.maintxt{
+
+  background-color: rgba(0, 0, 0, 0.55) !important;
+    border-color: transparent !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+  font-size: 13px;
+}
+
+
+.drop{
+
+  width: 100%;
+  margin-left: -16px;
+}
+
+.drop1{
+
+  top: -37px;
+  width: 100%;
+}
+
+
+
+.full-ui{
+  border-width: 0 !important;
+  overflow: visible !important;
+  overflow-x: hidden !important;
+  padding: 0em !important;
+}
+
+.list{
+  border-width: 0 !important;
+  overflow: visible !important;
+  overflow-x: hidden !important;
+  padding: 0% !important;
+    margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin: 6px !important;
+
+}
+
+
+.listbg{
+
+    background-color: #6d6f70 !important;
+}
+
+
+ .listview { 
+
+  background-color: #373737 !important;
+  border-color: #939393 !important;
+}
+
+
+
+
+
+
+
+.foot{
+
+    padding-top: 0px !important;
+}
+
+
+.ui-listview .ui-li-has-thumb>img:first-child, .ui-listview .ui-li-has-thumb>.ui-btn>img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb{
+
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  max-height: 5em;
+  max-width: 5em;
+  border-radius: 0px;
+  }
+
+
+  .border{
+
+  -webkit-border-bottom-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  -webkit-border-bottom-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+ }
+
+
+
+.padfullbutton{
+  padding: 0px !important;
+}
+
+.profilehead{
+
+  float:left;
+  font-size: 13px;   
+  padding-top: 5px;
+  padding-left: 7px;
+  color: #e30f25;
+}
+.profile{
+
+  float:left;
+  font-size: 13px;   
+  padding-top: 5px;
+  padding-left: 7px;
+}
+
+
+.fnt{
+
+  float: left;
+  font-size: 13px;
+  padding: 0px;
+  margin-top: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.uipad{
+  padding:0px !important;
+}
+
+/*.images{
+
+   background-image: url("images/img-1.png") !important;
+     padding: 55px;
+       background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+
+.images2{
+
+   background-image: url("images/img-2.png") !important;
+    padding: 55px;
+      background-repeat: no-repeat;
+  background-size: 100%;
+    
+}
+
+.images3{
+
+   background-image: url("images/img-3.png") !important;
+     padding: 55px;
+       background-repeat: no-repeat;
+  background-size: 100%;
+   
+}
+*/
+
+.ui-page-theme-a .images{
+   background-image: url("images/img-1.png") !important;
+    /* padding: 55px;*/
+       background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.images2{
+
+   background-image: url("images/img-2.png") !important;
+    /*padding: 55px;*/
+      background-repeat: no-repeat;
+  background-size: 100% 100%;
+    
+}
+
+.images3{
+
+   background-image: url("images/img-3.png") !important;
+    /* padding: 55px;*/
+       background-repeat: no-repeat;
+  background-size: 100% 100%;
+   
+}
+
+.imgh{
+  background-image: url("images/full.png") !important;
+  /* padding: 55px;*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+/*   #pageone.ui-page{
+  background-image: url("images/full.png") !important no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size:100% 100%;
+}*/
+
+.spacea{
+height:100px;
+}
+.spaceb{
+height:50px;
+}
+
+.ui-page-theme-a .ui-bar-inherit{
+    background-color:black !important; 
+  border-color: #ddd;
+  color: #333;
+  text-shadow: 0 1px 0 #eee;
+  font-weight: 700;
+}
+
+.manpad{
+
+  min-height: 56px !important;
+  /*padding-left: 6.25em !important;*/
+}
+
+.lef{
+  float:left !important;
+  width: 90px !important;
+
+}
+.head{
+    text-shadow: none !important;
+    color: white;
+     /* float: left;*/
+      font-size: 12px !important;
+/* padding-left: 5px;*/
+}
+#pag{
+  margin-top: 25px;
+}
+.conpad{
+  padding:0px !important;
+}
+.listbtncol{
+    background-color: #B2A5A7 !important;
+  border-color: #544B4B;
+  color: #333;
+  text-shadow: 0 1px 0 #f3f3f3;
+}
+.ui-page-theme-a .ui-panel-wrapper {
+  background-color:  !important;
+  border-color: #bbb;
+  color: #333;
+  text-shadow: 0 1px 0 #f3f3f3;
+}
+#overlayPanel{
+background-color:#fff!important;
+}
+.cenla{
+  text-align: center;
+  font-size: 18px;
+    background-color: rgb(230, 14, 38);
+  color: white;
+}
+#anikalli{
+  margin-top: 25px;
+}
+.ui-listview>.ui-li-has-thumb>.ui-btn{
+    min-height: 3.625em;
+  padding-left: 2.25em !important;
+}
+}
