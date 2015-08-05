@@ -103,7 +103,7 @@ else if(paguthi_obja !== null){
      
 
       $(document).off('click', '#backtwo').on('click', '#backtwo', function() { 
-      	$.mobile.changePage($('#pagethree'), { transition: "slide", changeHash: true, reverse: false });
+      	$.mobile.changePage($('#pagethree'), { transition: "none", changeHash: true, reverse: false });
 
 
       });

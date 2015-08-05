@@ -63,7 +63,7 @@ alert('Network error has occurred please try again!');
 				sessionStorage.setItem("paguthiArray",JSON.stringify(result[3]));*/
 
 
-				$.mobile.changePage($('#anikallist'), { transition: "slide", changeHash: true, reverse: false });
+				$.mobile.changePage($('#anikallist'), { transition: "none", changeHash: true, reverse: false });
 			}else {
 				alert('No Data Found for the search record');	
 			}
@@ -104,7 +104,7 @@ alert('Network error has occurred please try again!');
 				sessionStorage.setItem("paguthiArray",JSON.stringify(result[3]));*/
 
 				//alert();
-				$.mobile.changePage($('#anikallist'), { transition: "slide", changeHash: true, reverse: false });
+				$.mobile.changePage($('#anikallist'), { transition: "none", changeHash: true, reverse: false });
 			}else {
 				alert('No Data Found for the search record');	
 			}

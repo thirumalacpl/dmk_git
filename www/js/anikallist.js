@@ -60,7 +60,7 @@ $(document).off('click', '#anikalpageback').on('click', '#anikalpageback', funct
  
             sessionStorage.clear(); 
              refreshPage();
-            $.mobile.changePage($('#anikalpage'), { transition: "slide", changeHash: true, reverse: false }); 
+            $.mobile.changePage($('#anikalpage'), { transition: "none", changeHash: true, reverse: false }); 
             return false;
         });
 
@@ -71,7 +71,7 @@ $(document).off('click', '#anikalpageback').on('click', '#anikalpageback', funct
                     anikal_obj = anikalarray[index];
                     sessionStorage.setItem("anikalcurrentobj",JSON.stringify(anikal_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#anikallistperson'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#anikallistperson'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }
@@ -80,7 +80,7 @@ $(document).off('click', '#anikalpageback').on('click', '#anikalpageback', funct
                     group_obj = grouparray[index];
                     sessionStorage.setItem("groupcurrentobj",JSON.stringify(group_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#anikallistperson'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#anikallistperson'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }
@@ -89,7 +89,7 @@ $(document).off('click', '#anikalpageback').on('click', '#anikalpageback', funct
                     one_obj = oneArray[index];
                     sessionStorage.setItem("onecurrentobj",JSON.stringify(one_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#pagefour'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#pagefour'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }
@@ -98,7 +98,7 @@ $(document).off('click', '#anikalpageback').on('click', '#anikalpageback', funct
                     paguthi_obj = paguthiArray[index];
                     sessionStorage.setItem("paguthicurrentobj",JSON.stringify(paguthi_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#pagefour'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#pagefour'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }*/

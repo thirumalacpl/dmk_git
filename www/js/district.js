@@ -89,7 +89,7 @@ $(document).off('click', '#bacses').on('click', '#bacses', function() {
  
             sessionStorage.clear(); 
              refreshPage();
-            $.mobile.changePage($('#pagetwo'), { transition: "slide", changeHash: true, reverse: false }); 
+            $.mobile.changePage($('#pagetwo'), { transition: "none", changeHash: true, reverse: false }); 
             return false;
         });
 
@@ -102,7 +102,7 @@ $(document).off('click', '#bacses').on('click', '#bacses', function() {
                     mavattam_obj = mavattamArray[index];
                     sessionStorage.setItem("mavattamcurrentobj",JSON.stringify(mavattam_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#pagefour'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#pagefour'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }
@@ -111,7 +111,7 @@ $(document).off('click', '#bacses').on('click', '#bacses', function() {
                     nagaram_obj = nagaramArray[index];
                     sessionStorage.setItem("nagaramcurrentobj",JSON.stringify(nagaram_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#pagefour'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#pagefour'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }
@@ -120,7 +120,7 @@ $(document).off('click', '#bacses').on('click', '#bacses', function() {
                     one_obj = oneArray[index];
                     sessionStorage.setItem("onecurrentobj",JSON.stringify(one_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#pagefour'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#pagefour'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }
@@ -129,7 +129,7 @@ $(document).off('click', '#bacses').on('click', '#bacses', function() {
                     paguthi_obj = paguthiArray[index];
                     sessionStorage.setItem("paguthicurrentobj",JSON.stringify(paguthi_obj));
                     //$.mobile.changePage("details.html", {transition: "none", changeHash: true, reverse: false });
-                    $.mobile.changePage($('#pagefour'), { transition: "slide", changeHash: true, reverse: false });
+                    $.mobile.changePage($('#pagefour'), { transition: "none", changeHash: true, reverse: false });
                     return false;
 
         }

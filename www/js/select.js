@@ -53,7 +53,7 @@ $(document).one('pageshow', '#pagetwo', function(){
 				//alert(result[2] + "data from db");
 				//$.mobile.loading().hide();
 
-				$.mobile.changePage($('#pagethree'), { transition: "slide", changeHash: true, reverse: false });
+				$.mobile.changePage($('#pagethree'), { transition: "none", changeHash: true, reverse: false });
 			}else {
 				alert('No Data Found for the search record');	
 			}

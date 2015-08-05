@@ -56,7 +56,7 @@ else{
      
 
       $(document).off('click', '#anikalback').on('click', '#anikalback', function() { 
-      	$.mobile.changePage($('#anikallist'), { transition: "slide", changeHash: true, reverse: false });
+      	$.mobile.changePage($('#anikallist'), { transition: "none", changeHash: true, reverse: false });
 
 
       });

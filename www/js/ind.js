@@ -1,5 +1,5 @@
 $(document).on('pagecreate', '#pageone', function(){
-/*  $.mobile.changePage($('#pagetwo'), { transition: "slide", changeHash: true, reverse: false }); */
+/*  $.mobile.changePage($('#pagetwo'), { transition: "none", changeHash: true, reverse: false }); */
             
 
             	$.ajax({url: 'http://staging.eimpressive.com/slimrestapi-dmk/program.php',
@@ -41,25 +41,25 @@ alert('Network error has occurred please try again!');
 
 
      $(document).off('click', '#paget').on('click', '#paget', function() { 
-      	$.mobile.changePage($('#pagetwo'), { transition: "slide", changeHash: true, reverse: false });
+      	$.mobile.changePage($('#pagetwo'), { transition: "none", changeHash: true, reverse: false });
       	return false;
 
       });
 
         $(document).off('click', '#mavattam').on('click', '#mavattam', function() { 
-      	$.mobile.changePage($('#pagetwo'), { transition: "slide", changeHash: true, reverse: false });
+      	$.mobile.changePage($('#pagetwo'), { transition: "none", changeHash: true, reverse: false });
       	return false;
 
       });
 
            $(document).off('click', '#anikalbut').on('click', '#anikalbut', function() { 
-      	$.mobile.changePage($('#anikalpage'), { transition: "slide", changeHash: true, reverse: false });
+      	$.mobile.changePage($('#anikalpage'), { transition: "none", changeHash: true, reverse: false });
       	return false;
 
       });
 
               $(document).off('click', '#programbutpage').on('click', '#programbutpage', function() { 
-      	$.mobile.changePage($('#programpage'), { transition: "slide", changeHash: true, reverse: false });
+      	$.mobile.changePage($('#programpage'), { transition: "none", changeHash: true, reverse: false });
       	return false;
 
       });
